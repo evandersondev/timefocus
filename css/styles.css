@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.6rem;
+  color: #f5f5f5;
+  background: linear-gradient(to bottom, #090909, #030311);
+  width: 100%;
+}
+
+h1 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 46px;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.time-container {
+  width: 90%;
+  max-width: 500px;
+  background: #3d3f4833;
+  padding: 30px;
+  margin-top: 60px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px #00000033;
+}
+
+.btn-time {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-time button {
+  width: 30%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-time button:hover {
+  background: #3742fa;
+  border-color: #3742fa;
+}
+
+.time {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12rem;
+  color: #3742fa;
+  margin: 30px 0;
+}
+
+.btn-start-container {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-start-container:hover {
+  align-items: flex-end;
+}
+
+#btn-start {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: #3742fa;
+  color: #f5f5f5;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #3742fa77;
+  /* transition: all 0.1s ease-in-out; */
+}
+
+#btn-start:hover {
+  box-shadow: 0 0 0 #3742fa;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffc500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 45%;
+  }
+
+  .time-container {
+    padding: 15px;
+  }
+}
